@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/maestro.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'CormaorantGaramond';
+    src: url('../fonts/CormorantGaramond-Light.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  
+  
+
+body{
+    font-family: monospace;
+}
+.shadow{
+    box-shadow: 0px 20px 40px rgba(44, 61, 45, 0.25);
+    background: #3B38E8;
+    height: 4rem;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+   
+
+}
+.nav-item{
+    display: flex;
+}
+.nav-links{
+    margin-left: auto;
+    top: 3rem;
+   
+}
+
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: rgb(249, 246, 246);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.nav-links ul li a:hover{
+    border-bottom: 0.1em solid white;
+   
+    transition: all 0.5s;
+}
+.nav-logo img {
+    height: 3.5rem;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    border-radius: 3rem;
+    
+   
+}
+.nav-links label i{
+  color: white;
+  padding-top: 1.3rem;
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+@media  only screen and (max-width : 1004px) {
+    .nav-links label i{
+        display: block;
+        margin-right: 1rem;
+
+    }
+    .nav-links ul{
+     position: fixed;
+     width: 100%;
+     height: 50vh;
+     background: #3B38E8;;
+        top: 3.4rem;
+     text-align: center;
+     display: block;
+     right: -100%;
+     transition: all 0.5s;
+    }
+    .nav-links ul li{
+        display: block;
+       margin: 1rem;
+       line-height: 2rem;
+       
+    }
+   
+    
+        .nav-logo img {
+            padding-left: 1rem;
+        }
+      
+       
+        #check:checked~ul{
+            right: 0;
+          
+         }
+         .nav-links ul li a:hover{
+            border-bottom: 2px solid crimson;
+         }
+    
+    }
+  
+    
+    
+

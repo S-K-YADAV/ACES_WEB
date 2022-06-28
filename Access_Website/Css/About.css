@@ -1,0 +1,36 @@
+.About{
+    font-family:CormaorantGaramond,sans-serif ;
+    padding: 8rem 15rem 8rem 10rem;
+    color: #f4f3fa;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.About h2{
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+.About .discp p{
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .About h2{
+        font-size: 2rem;
+    }
+    .About .discp p{
+        font-size: 1.5rem;
+    }
+    .About{
+        padding: 5rem 0 5rem 2rem; 
+        text-align: left;
+    }
+    
+    
+}
+

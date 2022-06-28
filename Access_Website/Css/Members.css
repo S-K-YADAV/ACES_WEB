@@ -1,0 +1,124 @@
+#Members{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3rem 0;
+    font-weight: 600;
+    color: #3B38E8;
+    background: rgba(0, 0, 0, 0.01);
+    height: 100vh;
+   
+}
+#Members .section_title{
+    padding: 3rem 0 3rem 0;
+    font-family: merriweather,serif;
+font-weight: 400;
+font-style: normal;
+}
+@media only screen and (max-width:625px ){
+    #Members h2{
+        font-size: 1.3rem;
+        transition: 0.4s;
+    }
+    #Members{
+        height: auto;
+
+    }
+   
+   
+    
+}
+@media only screen and (max-width:1250px ){
+    #Members{
+        height:140vh;
+    }
+
+}
+@media only screen and (max-width:1250px ){
+    #Members{
+        height:auto;
+    }
+
+}
+
+
+
+.Members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.Mem_card{
+    color: #3B38E8;;
+    position: relative;
+    width: 16rem;
+    height: 12rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 5rem 1rem;
+    background: #fff;
+   transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    margin: 4rem 2rem;
+    resize: none;
+
+}
+.Mem_card p{
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.Mem_card:hover{
+    height: 14rem;
+
+}
+.Mem_card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-10rem);
+   z-index: 99;
+}
+.Mem_card .imgbox img{
+    width: 100%;
+    z-index: 1;
+    height: 14rem;
+    border-radius: 50%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    image-orientation: flip;
+}
+.Mem_card .Mem_content{
+    text-align: center;
+   position: relative;
+    opacity: 0;
+   transform: translateY(-20rem);
+   padding: 7rem 0 0 0;
+}
+.Mem_card .Mem_content h2{
+   font-size: 1.4rem;
+   
+    letter-spacing: 1px;
+}
+.Mem_card .Mem_content p{
+    font-size: 1rem;
+    text-align: center;
+    
+    padding-top: 2px;
+
+}
+.Mem_card:hover >.Mem_content{
+opacity: 1;
+transform: translateY(-6rem);
+
+}
+.Mem_card:hover >.posstions{
+    display: none;
+
+}

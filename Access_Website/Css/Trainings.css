@@ -1,0 +1,111 @@
+#trainings{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 4rem 0;
+    font-weight: 600;
+    color: #3B38E8;
+    background: rgba(0, 0, 0, 0.01);
+   
+}
+@media only screen and (max-width:625px ){
+    #trainings h2{
+        font-size: 1.1rem;
+        transition: 0.4s;
+    }
+    .trainings{
+        height: max-content;
+    }
+    
+}
+
+.trainings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 2rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 90vh;
+}
+
+.card{
+    color: #3B38E8;;
+    position: relative;
+    width: 20rem;
+    height: 14rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 3rem 1rem;
+    background: #fff;
+   transition: 0.3s;
+    cursor: pointer;
+    z-index: 1;
+    margin: 3rem 2rem;
+    resize: none;
+
+}
+
+.card:hover{
+    height: 20rem;
+
+}
+.card .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-5rem);
+   z-index: 99;
+}
+.card .imgbox img{
+    width: 100%;
+    z-index: 1;
+    height: 14rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.card .content{
+    text-align: center;
+    opacity: 0;
+   transform: translateY(-20rem);
+   padding: 2rem 0.5rem;
+}
+.card .content h2{
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+}
+.card .content p{
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 0.5ren;
+
+}
+.card:hover >.content{
+opacity: 1;
+transform: translateY(-6rem);
+
+}
+
+@media only screen and (max-width:625px ){
+    
+    .trainings{
+        height: auto;
+
+    }
+   
+   
+    
+}
+@media only screen and (max-width:1250px ){
+    .trainings{
+        height:140vh;
+    }
+
+}
+@media only screen and (max-width:1250px ){
+    .trainings{
+        height:auto;
+    }
+
+}
